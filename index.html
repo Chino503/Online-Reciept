@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+
+		.hide {
+			display: none;
+		}
+
+		th {
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Product Calculator</h1>
+		<p>With this calculator you can make a reciept of the products you're selling</p>
+	</header>
+	
+	<form>
+		<table>
+			<tbody>
+				<tr>
+					<th>Name</th>
+					<th>Quantity</th>
+					<th>Price</th>
+				</tr>
+				<tr>
+					<td><input type="text" id="pName"></td>
+					<td><input type="number" id="quantity" value="1"></td>
+					<td><input type="number" id="price" value="0.00"></td>
+					<td><input type="button" id="btnAdd" value="Add" onclick="addItem()"></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+	<section>
+		<header>
+			<div class="hide">
+				<h2>Producs</h2>
+				<div class="products">
+					<table>
+						<tbody id="items">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</header>
+	</section>
+	<script src="js/app.js"></script>
+</body>
+</html>
